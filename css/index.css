@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box;
+  font-family: "Avenir next", sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FDE0A3; }
+
+h1 {
+  font-style: italic;
+  text-transform: uppercase; }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #979797; }
+
+.nav_done, .nav_cancel, .nav_edit {
+  text-align: center; }
+
+.nav_done, .nav_cancel {
+  border-right: 1px solid #979797; }
+
+.nav_done {
+  color: #6FAE4E; }
+
+.nav_cancel {
+  color: #AE604E; }
+
+.nav_edit {
+  color: #4E53AE; }
+
+.hidden {
+  display: none; }
+
+@media (max-width: 375px) {
+  header {
+    margin-top: 93px;
+    margin-bottom: 100px; }
+  h1 {
+    font-size: 28px; }
+  .form {
+    display: flex;
+    flex-direction: row;
+    border-radius: 5px;
+    border: 1px solid #979797;
+    width: 250px;
+    height: 32px;
+    overflow: hidden; }
+  .input, .task {
+    width: 250px;
+    height: 32px;
+    font-size: 14px; }
+  .input {
+    width: 214px;
+    padding: 8px 14px 8px 14px;
+    outline: none; }
+  .enter_button {
+    background-color: #ffffff;
+    background-image: url(../img/enter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 32px;
+    width: 35px;
+    border-left: 1px solid #979797; }
+  .list {
+    margin-top: 30px; }
+  .task {
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #979797; }
+  .task p {
+    margin: 8px 5px 8px 14px;
+    word-wrap: break-word; }
+  .nav {
+    font-size: 7px; }
+  .nav_done, .nav_cancel, .nav_edit {
+    width: 84px; } }
